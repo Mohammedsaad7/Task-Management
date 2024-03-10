@@ -20,7 +20,22 @@ namespace TaskCRUD.Services.Classes
 
         public async Task<List<Tasks>> GetTasksAsync()
         {
-            return await _tasks.Find(x => true).Project<Tasks>(Builders<Tasks>.Projection.Include("Id")).ToListAsync();
+            return await _tasks.Find(x => true).Project<Tasks>(Builders<Tasks>.Projection.Include("Id").Include("Name").Include("Description").Include("DueDate")).ToListAsync();
+        }
+
+        public void InsertTask(Tasks tasks)
+        {
+            _tasks.InsertOne(tasks);
+        }
+
+        public async Task UpdateTask(Tasks tasks)
+        {
+            await _tasks.FindOneAndReplaceAsync(x => x.Id == tasks.Id, tasks);
+        }
+
+        public async Task DeleteTask(string Id)
+        {
+            await _tasks.DeleteOneAsync(x => x.Id == Id);
         }
     }
 }

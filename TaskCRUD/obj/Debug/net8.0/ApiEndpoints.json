@@ -1,12 +1,65 @@
 [
   {
-    "ContainingType": "TaskCRUD.Controllers.TaskController",
+    "ContainingType": "TaskCRUD.Controllers.TasksController",
+    "Method": "Delete",
+    "RelativePath": "api/Tasks/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskCRUD.Controllers.TasksController",
     "Method": "Get",
-    "RelativePath": "api/Task",
+    "RelativePath": "api/Tasks/Get",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskCRUD.Controllers.TasksController",
+    "Method": "Insert",
+    "RelativePath": "api/Tasks/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tasks",
+        "Type": "TaskCRUD.Models.Tasks",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskCRUD.Controllers.TasksController",
+    "Method": "Update",
+    "RelativePath": "api/Tasks/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tasks",
+        "Type": "TaskCRUD.Models.Tasks",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

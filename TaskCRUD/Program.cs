@@ -1,5 +1,6 @@
 using TaskCRUD.Configurations;
 using TaskCRUD.Services.Classes;
+using TaskCRUD.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("MongoDatabase"));
-builder.Services.AddSingleton<TasksService>();
+builder.Services.AddSingleton<ITasksService,TasksService>();
+builder.Services.AddMvc();
 
 var app = builder.Build();
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskCRUD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ad231ac8446b029085232bd90ead3edf88e837f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskCRUD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskCRUD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
