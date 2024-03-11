@@ -1,0 +1,36 @@
+<div class="centered-component">
+    <div class="container">
+        <div class="sidebar">
+            <h2>Task Management</h2>
+            <div>
+                <div class="RangePicker">Today</div>
+                <!-- Angular component for today's tasks -->
+                <!-- Use ngFor here -->
+            </div>
+            <div>
+                <div class="RangePicker">Next 7 Days</div>
+                <!-- Angular component for next 7 days tasks -->
+                <!-- Use ngFor here -->
+            </div>
+            <div>
+                <div class="RangePicker">Next Month</div>
+                <!-- Angular component for next month tasks -->
+                <!-- Use ngFor here -->
+            </div>
+            <div>
+                <!-- Angular component for selecting date range -->
+                <!-- Placeholder for now -->
+                <div class="RangePicker">Date Range Selector</div>
+                <!-- Placeholder content -->
+                <p>Select date range component placeholder</p>
+            </div>
+        </div>
+        <div class="tasks">
+            <!-- Angular component for displaying tasks -->
+            <!-- Use ngFor here -->
+            <div class="task" *ngFor="let task of tasks">
+                <span>{{ task.name }}</span>
+            </div>
+        </div>
+    </div>
+</div>

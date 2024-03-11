@@ -2,7 +2,7 @@
   {
     "ContainingType": "TaskCRUD.Controllers.TasksController",
     "Method": "Delete",
-    "RelativePath": "api/Tasks/Delete/{id}",
+    "RelativePath": "api/Tasks/Delete",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -10,7 +10,7 @@
       {
         "Name": "Id",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -44,7 +44,7 @@
   {
     "ContainingType": "TaskCRUD.Controllers.TasksController",
     "Method": "Update",
-    "RelativePath": "api/Tasks/Update/{id}",
+    "RelativePath": "api/Tasks/Update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -52,11 +52,6 @@
       {
         "Name": "tasks",
         "Type": "TaskCRUD.Models.Tasks",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
         "IsRequired": true
       }
     ],
