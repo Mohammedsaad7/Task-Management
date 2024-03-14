@@ -27,6 +27,22 @@
   },
   {
     "ContainingType": "TaskCRUD.Controllers.TasksController",
+    "Method": "GetWithId",
+    "RelativePath": "api/Tasks/GetWithId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskCRUD.Controllers.TasksController",
     "Method": "Insert",
     "RelativePath": "api/Tasks/Insert",
     "HttpMethod": "POST",

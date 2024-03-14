@@ -23,6 +23,11 @@ namespace TaskCRUD.Services.Classes
             return await _tasks.Find(x => true).Project<Tasks>(Builders<Tasks>.Projection.Include("Id").Include("Name").Include("Description").Include("DueDate")).ToListAsync();
         }
 
+        public async Task<Tasks> GetTaskWithIdAsync(string id)
+        {
+            return await _tasks.Find(x => x.Id == id).Project<Tasks>(Builders<Tasks>.Projection.Include("Id").Include("Name").Include("Description").Include("DueDate")).FirstAsync();
+        }
+
         public void InsertTask(Tasks tasks)
         {
             _tasks.InsertOne(tasks);

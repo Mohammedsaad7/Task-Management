@@ -24,17 +24,31 @@ namespace TaskCRUD.Controllers
             return Ok(tasks);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetWithId(string id)
+        {
+            var tasks = await _tasksService.GetTaskWithIdAsync(id);
+            return Ok(tasks);
+        }
+
         [HttpPost]
-        public IActionResult Insert(Tasks tasks)
+        public async Task<IActionResult> Insert(Tasks tasks)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+            if(tasks.Id != string.Empty && tasks.Id != null)
+            {
+                await Update(tasks);
+            }
+            else
+            {
+                _tasksService.InsertTask(tasks);
+            }
 
-            _tasksService.InsertTask(tasks);
 
-            return Ok();
+            return Ok(200);
         }
 
         [HttpPut]
@@ -64,7 +78,7 @@ namespace TaskCRUD.Controllers
 
             await _tasksService.DeleteTask(Id);
 
-            return Ok();
+            return Ok(200);
         }
     }
 }
