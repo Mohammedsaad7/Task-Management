@@ -1,3 +1,14 @@
 .full-width{
     width: 100%;
 }
+
+
+.submit-button{
+    background-color: #6a1b9a !important; /* Example color */
+    color:white;
+    border-radius:4px;
+    border: #D6B4FC;
+    cursor: pointer;
+    font-size: 16px;
+    padding:6px;
+}

@@ -14,14 +14,16 @@ import { GetDaterangeService } from '../Services/get-daterange.service'
 import {MatSelectModule} from '@angular/material/select';
 import { Status } from '../../form-modal/Models/Status';
 import { GetStatusService } from '../../form-modal/Services/get-status.service';
+import { HeaderComponent } from "../../header/header.component";
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-task-list',
-  standalone: true,
-  imports: [CommonModule,MatButtonModule,MatIconModule, MatSelectModule],
-  providers:[DatePipe],
-  templateUrl: './task-list.component.html',
-  styleUrl: './task-list.component.css'
+    selector: 'app-task-list',
+    standalone: true,
+    providers: [DatePipe],
+    templateUrl: './task-list.component.html',
+    styleUrl: './task-list.component.css',
+    imports: [CommonModule, MatButtonModule, MatIconModule, MatSelectModule, HeaderComponent]
 })
 export class TaskListComponent implements OnInit, OnDestroy {
   title = 'TaskManager';
@@ -35,6 +37,7 @@ export class TaskListComponent implements OnInit, OnDestroy {
   getTasksSubscription?:Subscription;
   getTaskWithIdSubscription?:Subscription;
   getStatusSubscription?:Subscription;
+  getExpiredTasksSubscription?:Subscription;
   start:Date=new Date();
   end:Date=new Date();
   constructor(private tasksService : TasksService, 
@@ -43,7 +46,8 @@ export class TaskListComponent implements OnInit, OnDestroy {
               private deleteTaskService: DeleteTaskService,
               private datePipe: DatePipe,
               private getDateRangeService: GetDaterangeService,
-              private getStatusService: GetStatusService){}
+              private getStatusService: GetStatusService,
+              private snackBar: MatSnackBar){}
 
   ngOnInit(): void {
     this.loadTasks(this.selectedRange, this.selectedStatus);
@@ -51,12 +55,15 @@ export class TaskListComponent implements OnInit, OnDestroy {
     this.reloadSubscription = this.reloadTaskService.reloadTask$.subscribe(() => {
       this.loadTasks(this.selectedRange, this.selectedStatus);
     });
+    this.findExpiredStatuses('Expired',4);
   }
 
   ngOnDestroy(): void {
     // Unsubscribe to prevent memory leaks
     this.reloadSubscription?.unsubscribe();
     this.getTasksSubscription?.unsubscribe();
+    this.getStatusSubscription?.unsubscribe();
+    this.getExpiredTasksSubscription?.unsubscribe();
   }
 
   getAllStatuses(){
@@ -65,11 +72,23 @@ export class TaskListComponent implements OnInit, OnDestroy {
     }); 
   }
 
+  findExpiredStatuses(period: string, status: number){
+    const dateRange=this.getDateRangeService.getDateRange(period);
+    this.getExpiredTasksSubscription=this.tasksService.getTasks(status,dateRange.start!,dateRange.end!).subscribe((result :Tasks[]) => {
+      if(result.length > 0){
+        this.snackBar.open('You have ' + result.length + ' overdue tasks', 'Okay');
+      }
+    }); 
+  }
+
   loadTasks(period: string, status: number){
     this.selectedRange=period;
     this.selectedStatus=status;
     if(period == "Expired"){
       status=4;
+    }
+    else if(period == "Backlog"){
+      status=3;
     }
     const dateRange=this.getDateRangeService.getDateRange(period);
     this.getTasksSubscription=this.tasksService.getTasks(status,dateRange.start!,dateRange.end!).subscribe((result :Tasks[]) => {

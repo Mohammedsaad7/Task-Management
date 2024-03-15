@@ -13,7 +13,7 @@
     <div class="mb-3" >
       <mat-form-field class="full-width">
         <mat-label>Description:</mat-label>
-        <textarea matInput id="description" name="description" [(ngModel)]="data.taskData.description" required></textarea>
+        <textarea matInput id="description" name="description" [(ngModel)]="data.taskData.description"></textarea>
       </mat-form-field>
     </div>
 
@@ -34,6 +34,6 @@
         </mat-select>
       </mat-form-field>
     </div>
-    <button type="submit">Submit</button>
+    <button class="submit-button" type="submit">Submit</button>
 </form>
 </div>

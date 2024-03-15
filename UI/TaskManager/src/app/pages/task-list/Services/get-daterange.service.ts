@@ -11,7 +11,14 @@ export class GetDaterangeService {
 
   getDateRange(period: string){
     const start=new Date();
-    if(period == "Backlog" || period == "Expired"){
+    if(period == "Backlog"){
+      this.dateRange.start=undefined;
+      this.dateRange.end =undefined;
+
+      return this.dateRange;
+    }
+
+    else if(period == "Expired"){
       this.dateRange.start=undefined;
       this.dateRange.end =new Date(start.getFullYear(), start.getMonth(), start.getDate());
       this.dateRange.end.setSeconds(this.dateRange.end.getSeconds() - 1);
@@ -36,10 +43,10 @@ export class GetDaterangeService {
       if(period =="Today"){
         this.dateRange.end.setDate(this.dateRange.end.getDate() + 1);  
       }
-      else if(period ="Week"){
+      else if(period =="Week"){
         this.dateRange.end.setDate(this.dateRange.end.getDate() + 7);  
       }
-      else if(period="Month"){
+      else if(period =="Month"){
         this.dateRange.end.setDate(this.dateRange.end.getDate() + 30);  
       }
     }

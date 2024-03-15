@@ -1,28 +1,26 @@
-<div class="statusMessage" *ngIf="message.message !=''">
-    This is a message.
-</div>
+<app-header></app-header>
 <div class="centered-component">
     <div class="container">
         <div class="sidebar">
-            <h2>Task Management</h2>
+            <h2>Select task range</h2>
             <div>
                 <div [class]="selectedRangeClass('Today')" (click)="loadTasks('Today',this.selectedStatus)">Today</div>
                 <!-- Angular component for today's tasks -->
             </div>
             <div>
-                <div [class]="selectedRangeClass('Week')" (click)="loadTasks('Week',this.selectedStatus)">Next 7 Days</div>
+                <div [class]="selectedRangeClass('Week')" (click)="loadTasks('Week',this.selectedStatus)">Upcoming Week</div>
                 <!-- Angular component for next 7 days tasks -->
             </div>
             <div>
-                <div [class]="selectedRangeClass('Month')" (click)="loadTasks('Month',this.selectedStatus)">Next Month</div>
+                <div [class]="selectedRangeClass('Month')" (click)="loadTasks('Month',this.selectedStatus)">Upcoming Month</div>
                 <!-- Angular component for next month tasks -->
             </div>
             <div>
-                <div [class]="selectedRangeClass('All')" (click)="loadTasks('All',this.selectedStatus)">All Tasks</div>
+                <div [class]="selectedRangeClass('All')" (click)="loadTasks('All',this.selectedStatus)">All Upcoming Tasks</div>
                 <!-- Angular component for all tasks -->
             </div>
             <div>
-                <div [class]="selectedRangeClass('Backlog')" (click)="loadTasks('Backlog',this.selectedStatus)">Backlog</div>
+                <div [class]="selectedRangeClass('Backlog')" (click)="loadTasks('Backlog',this.selectedStatus)">Completed Tasks</div>
                 <!-- Angular component for backlog tasks -->
             </div>
             <div>
@@ -33,16 +31,18 @@
         <div class="taskContainer">
         <div class="taskSection">
             <!-- Angular component for displaying tasks -->
+            <div class="rightHeader">
             <h2>Tasks</h2>
-            <div class="mb-3" *ngIf="this.selectedRange!='Expired'">
+            <div class="mb-3" *ngIf="this.selectedRange!='Expired' && this.selectedRange!='Backlog'">
                 <mat-form-field>
-                  <mat-label>Select an option</mat-label>
+                  <mat-label>Select a status</mat-label>
                   <mat-select id="statusId" name="statusId" [(value)]="this.selectedStatus" (selectionChange)="loadTasks(this.selectedRange,$event.value)">
                     <mat-option [value]="0">All</mat-option>
                     <mat-option *ngFor="let status of statuses" [value]="status.id">{{status.name}}</mat-option>
                   </mat-select>
                 </mat-form-field>
               </div>
+              </div>  
             <div class="task" *ngFor="let task of tasks">
                 <span>{{ task.name }}</span>
                 <div class="buttons-container">

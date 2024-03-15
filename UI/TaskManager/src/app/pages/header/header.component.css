@@ -1,0 +1,10 @@
+header {
+    background-color: #6a1b9a;
+    color: #ffffff; /* Set text color to white for contrast */
+    padding: 10px; /* Add padding for spacing */
+  }
+  
+  h1 {
+    margin: 0; /* Remove default margin for h1 */
+  }
+

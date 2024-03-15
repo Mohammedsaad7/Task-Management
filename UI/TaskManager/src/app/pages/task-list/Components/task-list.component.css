@@ -98,6 +98,13 @@
     cursor: pointer;
 }
 
+.rightHeader{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+  }
+
+
 @media only screen and (max-width: 768px) {
     .container {
         flex-direction: column;

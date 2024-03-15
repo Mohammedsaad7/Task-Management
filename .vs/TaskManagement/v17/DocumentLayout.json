@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D937BD14-898B-40B5-AB23-7042A7ACD679}|UnitTests\\UnitTests.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\unittests\\statusapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D937BD14-898B-40B5-AB23-7042A7ACD679}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\statusapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\services\\classes\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\services\\classes\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +15,20 @@
       "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\services\\classes\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\services\\classes\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D937BD14-898B-40B5-AB23-7042A7ACD679}|UnitTests\\UnitTests.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\unittests\\tasksapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D937BD14-898B-40B5-AB23-7042A7ACD679}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\tasksapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D937BD14-898B-40B5-AB23-7042A7ACD679}|UnitTests\\UnitTests.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\unittests\\tasksapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D937BD14-898B-40B5-AB23-7042A7ACD679}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\tasksapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\services\\classes\\statusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +39,8 @@
       "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\services\\interfaces\\istatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\services\\interfaces\\itasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\services\\interfaces\\itasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|solutionrelative:taskcrud\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3656C61B-3B25-426E-9E9F-BAAA742A6684}|TaskCRUD\\TaskCRUD.csproj|c:\\users\\saad\\source\\repos\\taskmanagement\\taskcrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -62,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
@@ -72,7 +68,7 @@
               "RelativeDocumentMoniker": "TaskCRUD\\Program.cs",
               "ToolTip": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Program.cs",
               "RelativeToolTip": "TaskCRUD\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAA7AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T16:07:25.434Z",
               "IsPinned": true,
@@ -80,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\appsettings.json",
               "RelativeDocumentMoniker": "TaskCRUD\\appsettings.json",
@@ -93,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TasksApiTests.cs",
               "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\UnitTests\\TasksApiTests.cs",
               "RelativeDocumentMoniker": "UnitTests\\TasksApiTests.cs",
@@ -111,20 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StatusApiTests.cs",
-              "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\UnitTests\\StatusApiTests.cs",
-              "RelativeDocumentMoniker": "UnitTests\\StatusApiTests.cs",
-              "ToolTip": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\UnitTests\\StatusApiTests.cs",
-              "RelativeToolTip": "UnitTests\\StatusApiTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T07:12:08.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IStatusService.cs",
               "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Services\\Interfaces\\IStatusService.cs",
               "RelativeDocumentMoniker": "TaskCRUD\\Services\\Interfaces\\IStatusService.cs",
@@ -132,8 +115,7 @@
               "RelativeToolTip": "TaskCRUD\\Services\\Interfaces\\IStatusService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T16:55:32.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T16:55:32.28Z"
             },
             {
               "$type": "Document",
@@ -143,14 +125,14 @@
               "RelativeDocumentMoniker": "TaskCRUD\\Controllers\\StatusController.cs",
               "ToolTip": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Controllers\\StatusController.cs",
               "RelativeToolTip": "TaskCRUD\\Controllers\\StatusController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAWwCQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T16:55:06.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Models\\Status.cs",
               "RelativeDocumentMoniker": "TaskCRUD\\Models\\Status.cs",
@@ -158,17 +140,18 @@
               "RelativeToolTip": "TaskCRUD\\Models\\Status.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T16:52:22.717Z"
+              "WhenOpened": "2024-03-14T16:52:22.717Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Tasks.cs",
               "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Models\\Tasks.cs",
               "RelativeDocumentMoniker": "TaskCRUD\\Models\\Tasks.cs",
               "ToolTip": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Models\\Tasks.cs",
               "RelativeToolTip": "TaskCRUD\\Models\\Tasks.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T16:22:20.139Z",
               "EditorCaption": ""
@@ -187,13 +170,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "TasksService.cs",
               "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Services\\Classes\\TasksService.cs",
               "RelativeDocumentMoniker": "TaskCRUD\\Services\\Classes\\TasksService.cs",
               "ToolTip": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Services\\Classes\\TasksService.cs",
               "RelativeToolTip": "TaskCRUD\\Services\\Classes\\TasksService.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBQAAAArAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T16:25:28.505Z",
               "EditorCaption": ""
@@ -206,14 +189,14 @@
               "RelativeDocumentMoniker": "TaskCRUD\\Controllers\\TasksController.cs",
               "ToolTip": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Controllers\\TasksController.cs",
               "RelativeToolTip": "TaskCRUD\\Controllers\\TasksController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAASwC0AAAAdAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwBMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T16:30:34.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "StatusService.cs",
               "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Services\\Classes\\StatusService.cs",
               "RelativeDocumentMoniker": "TaskCRUD\\Services\\Classes\\StatusService.cs",
@@ -221,12 +204,11 @@
               "RelativeToolTip": "TaskCRUD\\Services\\Classes\\StatusService.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T16:56:55.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T16:56:55.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "DatabaseSettings.cs",
               "DocumentMoniker": "C:\\Users\\Saad\\source\\repos\\TaskManagement\\TaskCRUD\\Configurations\\DatabaseSettings.cs",
               "RelativeDocumentMoniker": "TaskCRUD\\Configurations\\DatabaseSettings.cs",
