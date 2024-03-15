@@ -14,12 +14,12 @@ export class TasksService {
     const url = `${environment.apiUrl}Tasks/Get`;
     let httpParams = new HttpParams()
     if (start !== undefined) {
-      httpParams = httpParams.set('start', start!.toLocaleString());
+      httpParams = httpParams.set('start', start!.toISOString());
     }
     
     // Check if end is defined before setting it in HttpParams
     if (end !== undefined) {
-      httpParams = httpParams.set('end', end!.toLocaleString());
+      httpParams = httpParams.set('end', end!.toISOString());
     }
     httpParams=httpParams.set('statusId',status);
 
