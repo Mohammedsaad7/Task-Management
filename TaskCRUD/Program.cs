@@ -19,6 +19,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("MongoDatabase"));
 builder.Services.AddSingleton<ITasksService,TasksService>();
+builder.Services.AddSingleton<IStatusService, StatusService>();
 
 
 var app = builder.Build();

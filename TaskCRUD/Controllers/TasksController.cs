@@ -18,9 +18,9 @@ namespace TaskCRUD.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(DateTime? start, DateTime? end, int statusId)
         {
-            var tasks = await _tasksService.GetTasksAsync();
+            var tasks = await _tasksService.GetTasksAsync(start,end,statusId);
             return Ok(tasks);
         }
 
@@ -38,13 +38,17 @@ namespace TaskCRUD.Controllers
             {
                 return BadRequest(ModelState);
             }
-            if(tasks.Id != string.Empty && tasks.Id != null)
-            {
-                await Update(tasks);
-            }
             else
             {
-                _tasksService.InsertTask(tasks);
+                tasks.DueDate=tasks.DueDate.ToLocalTime();
+                if (tasks.Id != string.Empty && tasks.Id != null)
+                {
+                    await Update(tasks);
+                }
+                else
+                {
+                    _tasksService.InsertTask(tasks);
+                }
             }
 
 

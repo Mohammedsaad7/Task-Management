@@ -26,6 +26,14 @@
       </mat-form-field>
       
     </div>
+    <div class="mb-3">
+      <mat-form-field>
+        <mat-label>Select an option</mat-label>
+        <mat-select [(ngModel)]="data.taskData.statusId" id="statusId" name="statusId">
+          <mat-option *ngFor="let status of statuses" [value]="status.id">{{status.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
     <button type="submit">Submit</button>
 </form>
 </div>

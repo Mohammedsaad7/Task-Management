@@ -18,14 +18,43 @@ namespace TaskCRUD.Services.Classes
             _tasks = database.GetCollection<Tasks>("Tasks");
         }
 
-        public async Task<List<Tasks>> GetTasksAsync()
+        public async Task<List<Tasks>> GetTasksAsync(DateTime? start, DateTime? end, int statusId)
         {
-            return await _tasks.Find(x => true).Project<Tasks>(Builders<Tasks>.Projection.Include("Id").Include("Name").Include("Description").Include("DueDate")).ToListAsync();
+            var filterBuilder = Builders<Tasks>.Filter;
+            var filter = filterBuilder.Empty; // Start with an empty filter
+
+            // Check if start date is provided
+            if (start.HasValue)
+            {
+                // Add condition to filter for dueDate greater than or equal to start date
+                filter &= filterBuilder.Gt(x => x.DueDate, start.Value);
+            }
+
+            // Check if end date is provided
+            if (end.HasValue)
+            {
+                // Add condition to filter for dueDate less than or equal to end date
+                filter &= filterBuilder.Lt(x => x.DueDate, end.Value);
+            }
+            if(statusId != 0)
+            {
+                if (statusId == 4)
+                {
+                    filter = filter & ( filterBuilder.Eq(x => x.StatusId, 1) | filterBuilder.Eq(x => x.StatusId, 2));
+                    //filter |= filterBuilder.Eq(x => x.StatusId, 2);
+                }
+                else
+                {
+                    filter &= filterBuilder.Eq(x => x.StatusId, statusId);
+                }
+            }
+
+            return await _tasks.Find(filter).Project<Tasks>(Builders<Tasks>.Projection.Include("Id").Include("Name").Include("Description").Include("DueDate")).ToListAsync();
         }
 
         public async Task<Tasks> GetTaskWithIdAsync(string id)
         {
-            return await _tasks.Find(x => x.Id == id).Project<Tasks>(Builders<Tasks>.Projection.Include("Id").Include("Name").Include("Description").Include("DueDate")).FirstAsync();
+            return await _tasks.Find(x => x.Id == id).Project<Tasks>(Builders<Tasks>.Projection.Include("Id").Include("Name").Include("Description").Include("DueDate").Include("StatusId")).FirstAsync();
         }
 
         public void InsertTask(Tasks tasks)

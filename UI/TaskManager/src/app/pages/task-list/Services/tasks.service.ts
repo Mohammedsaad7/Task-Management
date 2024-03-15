@@ -9,8 +9,20 @@ import { Observable } from 'rxjs';
 export class TasksService {
   url="/Tasks/Get";
   constructor(private http: HttpClient){}
-  public getTasks():Observable<Tasks[]>{
-    return this.http.get<Tasks[]>('https://localhost:7226/api/Tasks/Get');
+  public getTasks(status:number, start?: Date, end?: Date):Observable<Tasks[]>{
+    let httpParams = new HttpParams()
+    if (start !== undefined) {
+      httpParams = httpParams.set('start', start!.toLocaleString());
+    }
+    
+    // Check if end is defined before setting it in HttpParams
+    if (end !== undefined) {
+      httpParams = httpParams.set('end', end!.toLocaleString());
+    }
+    httpParams=httpParams.set('statusId',status);
+
+    let options = { params: httpParams };
+    return this.http.get<Tasks[]>('https://localhost:7226/api/Tasks/Get',options);
   }
 
   public getTasksWithId(id:string):Observable<Tasks>{
