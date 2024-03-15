@@ -17,9 +17,12 @@ After you have installed all of the prerequisites you will have to make sure all
 - In the .Net Web API project you have to configure the connection string to your mongodb in the startup.cs file.
 - You also have to setup Cors with the correct address of the Angular application
 - You also have to always allow the SSl.
+- To allow locally signed certificate in firefox you click on Advanced and proceed anyway.
+- To allow locally signed certificate in chrome you navigate to either 'chrome://flags/#allow-insecure-localhost' or 'chrome://flags/#temporary-unexpire-flags-m118' and enable it.
 
 Angular application:
 - In the environments.development.ts and the environment.ts files configure the address for the .Net application like so "https://localhost:7226/api/"
+- You have to run npm install in the terminal
 
 MongoDb
 - Using the mongoshell you have to run the scripttorun.js like so : load('../../Users/Saad/source/repos/TaskManagement/scripttorun.js')
